@@ -24,13 +24,13 @@
             <h1 class="text-center" style="color: rgb(255, 72, 0);">BOOK DETAILS</h1>
     <table>
         <tr>
-            <th style="color: red;">id</th>
-            <th style="color: red;">book_name</th>
-            <th style="color: red;">book_author</th>
+            <th style="color: rgb(255, 0, 157);">id</th>
+            <th style="color: #ff00aa;">book_name</th>
+            <th style="color: rgb(255, 0, 179);">book_author</th>
         </tr>
         {% for data in datas[0] %}
         <tr>
-            <th style="color: black;">{{data.id}}</th>
+            <th style="color: rgb(0, 0, 0);">{{data.id}}</th>
             <th>{{data.book_name}}</th>
             <th>{{data.book_author}}</th>
             <th><a href="{{url_for("deleteBook",id=data.id)}}">delete</a></th>
@@ -45,9 +45,9 @@
     <h2 style="color: rgb(255, 72, 0);">BARROW BOOK DETAILS</h2>
     <table>
         <tr>
-            <th style="color: red;">id</th>
-            <th style="color: red;">book_name</th>
-            <th style="color: red;">book_author</th>
+            <th style="color: rgb(255, 0, 157);">id</th>
+            <th style="color: rgb(255, 0, 200);">book_name</th>
+            <th style="color: rgb(255, 0, 179);">book_author</th>
         </tr>
         {% for data in datas[1] %}
         <tr>
